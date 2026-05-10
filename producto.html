@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Producto Estrella | CeliFree</title>
+</head>
+<body>
+    <header><h1>Nuestra Selección</h1></header>
+    <nav><a href="index.html">Inicio</a><a href="producto.html">Producto</a><a href="contacto.html">Contacto</a></nav>
+    <div class="container">
+        <div class="producto-card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600" class="producto-img" alt="Pan">
+            <div class="detalles">
+                <h2>Pan de Hogaza Masa Madre</h2>
+                <p class="precio">4,95 €</p>
+                <p>Corteza crujiente y miga esponjosa. Elaborado con harina de sarraceno y arroz integral. ¡El favorito de nuestros clientes!</p>
+                <button class="btn" onclick="añadirCarrito()">🛒 Añadir al carrito</button>
+                <p id="mensajeCarrito" style="color: var(--primario); font-weight: bold; margin-top: 10px;"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function añadirCarrito() {
+            // Animación sencilla para que sea "más chulo"
+            const msg = document.getElementById('mensajeCarrito');
+            msg.innerHTML = "✅ ¡Producto añadido con éxito!";
+            setTimeout(() => { msg.innerHTML = ""; }, 3000);
+        }
+    </script>
+</body>
+</html>

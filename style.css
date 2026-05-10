@@ -1,0 +1,41 @@
+:root {
+    --primario: #27ae60;
+    --secundario: #2ecc71;
+    --acento: #e67e22;
+    --fondo: #f4f7f6;
+    --texto: #2c3e50;
+}
+
+body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: var(--fondo); color: var(--texto); line-height: 1.6; }
+
+
+header { background: var(--primario); color: white; padding: 2rem 0; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+nav { background: white; padding: 10px; text-align: center; sticky: top; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+nav a { color: var(--texto); margin: 0 20px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+nav a:hover { color: var(--primario); }
+
+
+.container { width: 90%; max-width: 1000px; margin: 30px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+
+.hero-img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 20px; border: 3px solid #eee; }
+
+
+.producto-card { display: flex; flex-wrap: wrap; gap: 30px; align-items: center; }
+.producto-img { width: 100%; max-width: 350px; border-radius: 10px; transition: transform 0.3s; }
+.producto-img:hover { transform: scale(1.03); }
+
+.detalles { flex: 1; min-width: 300px; }
+.precio { font-size: 1.5rem; color: var(--primario); font-weight: bold; margin: 10px 0; }
+
+
+.btn { 
+    background: var(--acento); color: white; padding: 12px 25px; border: none; 
+    border-radius: 50px; cursor: pointer; font-weight: bold; font-size: 1rem;
+    transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+}
+.btn:hover { background: #d35400; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4); }
+
+
+input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+footer { text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9rem; }

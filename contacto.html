@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto | CeliFree</title>
+</head>
+<body>
+    <header><h1>Contacto</h1></header>
+    <nav><a href="index.html">Inicio</a><a href="producto.html">Producto</a><a href="contacto.html">Contacto</a></nav>
+    <div class="container" style="max-width: 600px;">
+        <h3>¿Dudas sobre alérgenos?</h3>
+        <p>Escríbenos y te asesoramos de forma personalizada.</p>
+        <form>
+            <input type="text" id="nombre" placeholder="Nombre completo">
+            <input type="email" id="email" placeholder="Correo electrónico">
+            <textarea id="mensaje" rows="5" placeholder="Tu consulta..."></textarea>
+            <button type="button" class="btn" style="width: 100%;" onclick="validar()">Enviar Mensaje</button>
+        </form>
+    </div>
+    <script>
+        function validar() {
+            // REQUISITO: getElementById obligatorio
+            var n = document.getElementById('nombre').value;
+            var e = document.getElementById('email').value;
+            var m = document.getElementById('mensaje').value;
+
+            if(n === "" || e === "" || m === "") {
+                alert("⚠️ Por favor, rellena todos los campos.");
+            } else {
+                alert("🚀 ¡Gracias " + n + "! Hemos recibido tu mensaje.");
+            }
+        }
+    </script>
+</body>
+</html>
